@@ -3,6 +3,7 @@ Velocyto estimates RNA velocities of single cells by distinguishing unspliced an
 In this project Velocyto python package is used to run the velocity analysis outputting a LOOM file from scRNA-seq aligned to reference BAM files and GTF annotation file.
 
 File description (in the order of their excecution):
+
 1. velocyto-0.17_environment.yaml - This YAML file defines the Conda environment required to reproducibly run Velocyto v0.17. Generated using Miniforge3 (Conda version 24.11.3) on a Linux kernel (version 5.14). Excecute:
 
    ```bash
@@ -10,6 +11,7 @@ File description (in the order of their excecution):
    ```
    
 2. velocyto.sh - SLURM submission script for running the Velocyto package for individual BAM files. Execute using sbatch.
+
 3. merge_looms_with_union_and_combine.py - For using the individual LOOM files downstream, they need to be merged. This is a customized python script to merge multiple .loom files into one using loompy, compatible with loompy v3.x APIs observed in the user's environment. Command line execution. 
 
 NOTE: sbatch parameters need to updated as per your cluster requirements or other cluster management and job scheduling systems. The paths in the scripts are user defined that needs to be updated.
