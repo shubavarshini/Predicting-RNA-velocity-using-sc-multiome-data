@@ -2,7 +2,7 @@
 # ==============================================================================
 # Author      : Dr. Shuba Varshini Alampalli
 # Date        : Feb 2026
-# Description : Python script to merge the loom files generated for multiple scRNA and chnging barcodes to include replicate metadata
+# Description : Custom python script to merge the loom files generated for multiple scRNA and chnging barcodes to include replicate metadata
 # ==============================================================================
 """
 merge_looms_with_union_and_combine.py
