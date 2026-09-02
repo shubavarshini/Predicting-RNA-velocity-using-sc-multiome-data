@@ -39,7 +39,7 @@ for BAM in "${BAMS[@]}"; do
   # barcode path derived from BAM location
   BARCODES="$(dirname "$BAM")/filtered_feature_bc_matrix/barcodes.tsv.gz"
 
-  OUTDIR="/data/cephfs-1/home/users/shal11_c/work/Documents/multivelo_velocyto_Dec27/${SAMPLE}_velocyto"
+  OUTDIR="~/work/Documents/multivelo_velocyto_Dec27/${SAMPLE}_velocyto"
   
   # create output directory if it does not exist
   mkdir -p "${OUTDIR}"
@@ -49,7 +49,7 @@ for BAM in "${BAMS[@]}"; do
   echo "  Barcodes: ${BARCODES}"
   
   rsync -av "${BAM}" "${OUTDIR}/"
-  BAM_copy="/data/cephfs-1/home/users/shal11_c/work/Documents/multivelo_velocyto_Dec27/${SAMPLE}_velocyto/gex_possorted_bam.bam"
+  BAM_copy="~/work/Documents/multivelo_velocyto_Dec27/${SAMPLE}_velocyto/gex_possorted_bam.bam"
   
   samtools sort -t CB  -m 10G -@ 20 -O BAM -o ${OUTDIR}/cellsorted_gex_possorted_bam.bam ${BAM}
 
