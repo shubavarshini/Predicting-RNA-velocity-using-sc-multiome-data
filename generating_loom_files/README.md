@@ -1,6 +1,6 @@
 Velocyto estimates RNA velocities of single cells by distinguishing unspliced and spliced mRNAs in standard single-cell RNA sequencing protocols. 
 
-In this project Velocyto python package is used to run the velocity analysis outputting a LOOM file from scRNA-seq aligned to reference BAM files and GTF annotation file.
+In this project Velocyto python package is used to run the velocity analysis outputting a LOOM file from scRNA-seq aligned to reference BAM files and GTF annotation file. LOOM files are a pre-requisite to run Multivelo package. 
 
 File description (in the order of their excecution):
 
